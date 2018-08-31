@@ -7,6 +7,7 @@
 #include <sys/types.h>
 #include <unistd.h>
 
+#include "relay.h"
 #include "server.h"
 
 /*
@@ -23,12 +24,6 @@
 
 static pthread_mutex_t *mutex;
 
-int relayModuleInit(uint8_t r1, uint8_t r2);
-void switch1Relay();
-void switch2Relay();
-
-int getRelay1State();
-int getRelay2State();
 
 /*
  * Struct to handle actions of program

@@ -221,9 +221,6 @@ void startListnening(void)
 			continue;
 		}
 
-		/*
-		 * TODO: Implement handleClient function
-		 */
 		error = pthread_create(&thread, NULL, handleClient, (void *) &clientSocket);
 		if (error) {
 			printf("Couldnt create thread to handle user requests\n");

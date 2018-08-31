@@ -164,6 +164,10 @@ int createSocket(int port)
 	int error;
 
 	error = relayModuleInit(15, 0);
+	if (error) {
+		printf("RelayModule initialization failed\n");
+		return -1;
+	}
 
 	__socketfd = socket(AF_INET, SOCK_STREAM, 0);
 	if (__socketfd == -1) {

@@ -11,6 +11,6 @@ void setRelay2Pin(uint8_t pin);
 void setRelay1State(uint8_t state);
 void setRelay2State(uint8_t state);
 int getRelay1State(void);
-int getRelay1State(void);
+int getRelay2State(void);
 
 #endif
